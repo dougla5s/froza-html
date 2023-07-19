@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+body, html {
+    height: 150%;
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 1.25rem;
+    background-image: url("https://wallpapers.com/images/hd/solid-rough-concrete-wall-8m0n277h4ydabx9u.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ul {
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    height: 64px;
+    justify-content: space-between;
+    z-index: 10;
+}
+.nav-left {
+    display: flex;
+}
+.nav-right {
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-item {
+    padding: 0.5rem;
+    margin: 0 2rem;
+    cursor: pointer;
+    color: white;
+    transition: color .5s;
+}
+.nav-item:hover {
+    color: red;
+    transition: color .5s;
+}
+.lang {
+    display: flex;
+}
+
+.lang > div {
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.currency {
+    display: flex;
+    margin-left: 1rem;
+}
+
+.cur {
+    margin: 0 0.5rem;
+    padding: 0.25rem;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.cur:hover {
+    color: black;
+    background-color: white;
+}
+
+#main {
+    display: flex;
+}
+#aside {
+    display: flex;
+    width: 250px;
+    position: fixed;
+    top: 64px;
+    background-color: white;
+    height: 100vh;
+    align-items: center;
+    z-index: 5;
+}
+.aside-wrapper {
+    width: 250px;
+}
+.aside-wrapper > div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.aside-title {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    cursor: default;
+}
+
+.aside-item {
+    cursor: pointer;
+    position: relative;
+    transition: all 1s;
+    padding: 0 2rem;
+    border-bottom: solid lightgray 0.5px;
+    transition: all .5s;
+    background-image: linear-gradient(rgba(211, 211, 211, 0.726), rgba(211, 211, 211, 0.726));
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+}
+
+.aside-item:hover {
+    transition: all .5s;
+    background-size: 100% 100%;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0.5rem;
+}
+.social {
+    width: 48px;
+    cursor: pointer;
+}
+.tel {
+    font-size: 1rem;
+}
+
+.content {
+    margin-top: 64px;
+    margin-left: 250px;
+    width: 100%;
+    height: 100vh;
+}
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 3rem;
+}
+
+.content-ad {
+    height: 30vmax;
+    width: 100%;
+    background-color: lightgray;
+}
+.content-cases {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+.case-col {
+    display: flex;
+}
+.case {
+    width: 20vmax;
+    height: 20vmax;
+    background-color: lightgray;
+    margin: 2rem;
+}
+
+#footer {
+    margin: 0;
+    width: 100%;
+}
